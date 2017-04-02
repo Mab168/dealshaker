@@ -15,7 +15,8 @@
 require "core/bootstrap.php";
 
 $browser = "kcfinder\\browser"; // To execute core/bootstrap.php on older
-die("111111111111");
+
 $browser = new $browser();      // PHP versions (even PHP 4)
+die("222222222222");
 $browser->action();
 
