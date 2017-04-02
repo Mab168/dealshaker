@@ -67,7 +67,7 @@ class ControllerAccountLogin extends Controller {
 		}
 
 		$data['base'] = $server;
-		$this->document->setTitle($this->language->get('heading_title'));
+		$this->document->setTitle("Đăng nhập tài khoản");
 
 
 
@@ -226,7 +226,7 @@ class ControllerAccountLogin extends Controller {
 		// Check if customer has been approved.
 
 		if ($this->request->post['capcha'] != $_SESSION['cap_code']) {
-				$this->error['warning'] = "Warning: No match for Capcha";
+				$this->error['warning'] = "Mã bảo vệ không đúng";
 	    }
 	    
 		$customer_info = $this->model_account_customer->getCustomerByUsername($this->request->post['email']);
@@ -245,7 +245,7 @@ class ControllerAccountLogin extends Controller {
 
 		if (!$this->error) {
 			if (call_user_func_array("myHasLogin", array($this->request->post['email'], $this->request->post['password'], $this->customer))) {
-				$this->error['warning'] = $this->language->get('error_login');
+				$this->error['warning'] = "Cảnh báo: Tên đăng nhập hoặc Mật khẩu không đúng";
 				$this->model_account_customer->addLoginAttempt($this->request->post['email']);
 			} else {
 				$this->model_account_customer->deleteLoginAttempts($this->request->post['email']);

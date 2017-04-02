@@ -472,7 +472,7 @@ $(document).delegate('.agree', 'click', function(e) {
 })(window.jQuery);
 
 $(function(){
-	$('title').text($('title').text() + ' | Iontach');
+	$('title').text($('title').text() + ' | Shop.gdgclub.org');
 	$('.goog-te-gadget img').hide();
 });
 

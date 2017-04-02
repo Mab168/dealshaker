@@ -5,11 +5,11 @@
       <div class="links-horizontal">
          <a href="login.html"
             class="btn-blueberry active links-horizontal-item">
-         Log In
+         Đăng nhập
          </a>
          <a href="register.html"
             class="btn-blueberry links-horizontal-item">
-         Sign Up
+         Đăng ký
          </a>
       </div>
       <div class="container">
@@ -17,7 +17,7 @@
             <div class="form-box col-xs-10 col-md-5 col-lg-4 col-center login-form">
                <div class="form-box-top">
                   <h4 class="header">
-                     Log In
+                     Đăng nhập
                   </h4>
                </div>
                <form name="" action="login.html" method="post" class="form-lg-input form-horizontal">
@@ -28,7 +28,7 @@
                            <span class="input-group-addon">
                            <i class="fa fa-user"></i>
                            </span>
-                           <input type="text" id="_username" name="email" required="required" class="form-control" placeholder="Username" value="<?php echo $email; ?>" />                
+                           <input type="text" id="_username" name="email" required="required" class="form-control" placeholder="Tên đăng nhập" value="<?php echo $email; ?>" />                
                         </div>
                      </div>
                   </div>
@@ -38,7 +38,7 @@
                         <div class="input-group input-strict">
                            <span class="input-group-addon">
                            <i class="fa fa-lock"></i>
-                           </span><input type="password" id="_password" name="password" required="required" class="form-control" placeholder="Password" value="<?php echo $password; ?>"/>                
+                           </span><input type="password" id="_password" name="password" required="required" class="form-control" placeholder="Mật khẩu" value="<?php echo $password; ?>"/>                
                         </div>
                      </div>
                   </div>
@@ -58,7 +58,7 @@
                              <img class="img_capcha" style="float: left; height: 40px; width: 90px;" src="captcha_code.php"/>
                             </span>
 
-                              <input type="text" id="captcha" name="capcha" required="required" class="form-control" placeholder="Capcha" />
+                              <input type="text" id="captcha" name="capcha" required="required" class="form-control" placeholder="Mã bảo vệ" />
                               <a class="captcha_reload" href="javascript:reload_captcha_58d6948470523();"><i class="fa fa-refresh"></i></a>            
                            </span>
                         </div>
@@ -88,7 +88,7 @@
          <button type="submit" data-login="login-btn"
             data-loading-text="Processing"
             class="btn-blueberry btn-submit">
-         Log In
+         Đăng nhập
          </button>
          </div>
          </div>

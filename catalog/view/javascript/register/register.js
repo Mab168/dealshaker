@@ -321,12 +321,12 @@ $( document ).ready(function() {
         }
         
        
-         if (validate.BitcoinWalletAddress($(this)) === false) {
+        /* if (validate.BitcoinWalletAddress($(this)) === false) {
             return false;
         } else {
             validate.init($(this));
             self.find('#BitcoinWalletAddress').parent().addClass('has-success');
-        }
+        }*/
 
         var checkUser = null;
         var checkEmail = null;
@@ -501,7 +501,7 @@ $( document ).ready(function() {
                 }
             });
         }
-        if (checkUser && checkEmail && checkPhone && checkCMND) {
+        /*if (checkUser && checkEmail && checkPhone && checkCMND) {
             validate.check_BitcoinWalletAddress($(this), function(callback) {
                 if (!callback) {
                     self.find('#BitcoinWalletAddress').parent().addClass('has-error');
@@ -542,11 +542,11 @@ $( document ).ready(function() {
                     check_BitcoinWalletAddress = true;
                 }
             });
-        }
+        }*/
     
 
         
-        if(checkUser && checkEmail && checkPhone && checkCMND && check_BitcoinWalletAddress){
+        if(checkUser && checkEmail && checkPhone && checkCMND){
             $('#loading_pendding').show();
             $('.btn-register').hide();
             return true;

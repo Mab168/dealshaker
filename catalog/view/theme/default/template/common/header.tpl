@@ -20,8 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script src="catalog/view/javascript/bootstrap.min.js"></script>
-
+    
     <!--  -->
     <script src="catalog/view/theme/default/assets/js/compileddc25.js?201703131257"></script>
     <script src="catalog/view/theme/default/bundles/merchantsonedealsopen/js/Listing/categoryFilterdc25.js?201703131257"></script>
@@ -112,7 +111,7 @@
                       </a>
                    </li>
                    <li class="nav-parent last dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <a href="#" class="dropdown-toggle click_home" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                       <i class="visible-xs-inline visible-sm-inline imoon icon-user v-align-middle fs-18" aria-hidden="true"></i>
                       <span class="hidden-sm hidden-xs">Hello, <?php echo $customer['username'] ?></span>    
                       <b class="caret"></b>
